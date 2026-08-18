@@ -64,5 +64,47 @@ int main(int argc, char *argv[]) {
     printf("\nO produto desses valores e igual a %d", produto);
     printf("\nA media desses valores e igual a %d", media);
 
+	 // execício 6
+	int total_dias, anos, meses, dias, resto;
+
+    printf("Digite sua idade em dias: ");
+    scanf("%d", &total_dias);
+
+    anos = total_dias / 365;
+    resto = total_dias % 365;
+
+    meses = resto / 30;
+    dias = resto % 30;
+
+    printf("Voce tem %d anos, %d meses e %d dias de vida.\n", anos, meses, dias);
+    
+    // excício 7
+    double raio, volume;
+    
+    printf("Digite o raio de uma esfera: ");
+    scanf("%lf", &raio);
+    
+    volume = (4 /3) * 3 * raio * raio * raio;
+    printf("O volume da esfera sera de: %.3lf\n", volume);
+    
+    // execício 8
+    double x1, y1, x2, y2, distancia; 
+    
+    printf("Digite x1: ");
+    scanf("%lf", &x1);
+    
+    printf("Digite seu y: ");
+    scanf("%lf", &y1);
+    
+	printf("Digite x2: ");
+    scanf("%lf", &x2);
+    
+    printf("Digite seu y: ");
+    scanf("%lf", &y2);
+    
+    distancia = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+    
+    printf("A distancia entre esses dois pontos no plano e igual a %.2lf", distancia);
+    
 	return 0;
 }
