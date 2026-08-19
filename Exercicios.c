@@ -30,7 +30,36 @@ int main(int argc, char *argv[]) {
     mantissa = numero / pow(10, expoente);
 
     printf("%.1lfe^%d\n", mantissa, expoente);
-    
+
+	// execício 3 
+	int n, resultado, bit_64, bit_32, bit_16, bit_8, bit_4, bit_2, bit_1;
+	
+	printf("Entre com um valor para a conversao: ");
+	scanf("%d", &n);
+	
+	bit_64 = n % 2;
+	resultado = n / 2;
+	
+	bit_32 = resultado % 2;
+	resultado = resultado / 2;
+	
+	bit_16 = resultado % 2;
+	resultado = resultado / 2;
+	
+	bit_8 = resultado % 2;
+	resultado = resultado / 2;
+	
+	bit_4 = resultado % 2;
+	resultado = resultado / 2;
+	
+	bit_2 = resultado % 2;
+	resultado = resultado / 2;
+	
+	bit_1 = resultado % 2;
+	resultado = resultado / 2;
+	
+	printf("O numero %d em binario e igual a %d%d%d%d%d%d%d", n, bit_1, bit_2, bit_4, bit_8, bit_16, bit_32, bit_64);
+	
     // exercício 4
     int salario_fixo, total_em_vendas;
     float salario_total;
@@ -102,7 +131,7 @@ int main(int argc, char *argv[]) {
     printf("Digite seu y: ");
     scanf("%lf", &y2);
     
-    distancia = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+    distancia = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1)); //sqrt - raiz
     
     printf("A distancia entre esses dois pontos no plano e igual a %.2lf", distancia);
     
