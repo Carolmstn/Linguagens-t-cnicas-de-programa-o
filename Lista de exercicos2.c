@@ -105,16 +105,16 @@ scanf("%d", &total);
  printf("A quantidade de litros necessaria para essa viagem e %.3f\n", litros);
  
 //exercício 10
-int A, B, D, maiorAB, maior;
+	int a, b, c, d, maior_temp1, maior_temp2; 
 
-printf("\nDigite tres valores: ");
-scanf("%d %d %d", &A, &B, &D);
-
-maiorAB = (A + B + abs(A - B)) / 2;
-
-maior = (maiorAB + D + abs(maiorAB - D)) / 2;
-
-printf("%d eh o maior", maior);
- 
+	printf("Informe os valores a serem comparados: ");
+	scanf("%d %d %d %d", &a, &b, &c, &d);
+	
+	maior_temp1 = (a+b+abs(a-b))/2;
+	maior_temp2 = (maior_temp1+c+abs(maior_temp1-c))/2;
+	maior = (maior_temp2+d+abs(maior_temp2-d))/2;
+	
+	printf("O maior entre |%d||%d||%d||%d| e igual a %d", a,b,c,d,maior); 
+	
 	return 0;	
 }
