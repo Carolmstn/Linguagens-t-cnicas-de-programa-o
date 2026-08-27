@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
                 hp = sqrt(pow(a, 2) + pow(b, 2)); 
                 ar = (a * b) / 2;
                 
-                printf("A hipotenusa e a area de um triangulo com essas medidas e respectivamente igual a %.3f e %d\n", hp, ar);
+                printf("A hipotenusa e a area de um triangulo com essas medidas e respectivamente iguais a %.3f e %d\n", hp, ar);
             } else {
                 soma = a + b;
                 subtracao = a - b;
