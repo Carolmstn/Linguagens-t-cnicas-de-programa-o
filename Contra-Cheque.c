@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
 	
 	salario_bruto = horas * valor;
 	
-	desconto = calc_inss(salario);
+	desconto = calc_inss(salario_bruto);
 	
 	imposto = calc_irpf(salario_bruto);
 	
