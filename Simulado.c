@@ -5,19 +5,24 @@ int main() {
 
 //exercício 1 
 
-  int a,b,c,d;
+  int a,b,c,d,aux;
 
   printf("Digite 4 valores: ");
   scanf("%d %d %d %d, &a, &b, &c, &d);
 
-  printf("Uma possivel permutacao entre eles e %d %d %d %d\n", c, a, d, b);
+  aux = a;
+  d = b;
+  a = c;
+  c = d;
+  b = aux;
+
+  printf("Uma possivel permutacao entre eles e %d %d %d %d\n", a, b, c, d);
 
 //exercício 2 
 
     float valor_empresa, preco_acao, vpa, pvp;
     int quantidade;
 
-    // Entrada dos dados
     printf("Valor patrimonial da empresa: ");
     scanf("%f", &valor_empresa);
 
